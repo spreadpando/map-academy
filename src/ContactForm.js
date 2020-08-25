@@ -55,7 +55,6 @@ const ContactForm = () => {
     })
     if (response.status === 200) {
       setSubmitted(true)
-      console.log(response)
     }
   }
 
