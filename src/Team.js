@@ -21,7 +21,7 @@ const Team = () => {
         <TeamMember name='Mimi Ward MA, CALP' title='Founder & CEO' img='/img/team/mimi-avatar.jpg' />
         <TeamMember name='Whitaker Fanestil' title='COO' img='/img/team/whit-avatar.jpg' />
         <TeamMember name='Wilson Fanestil' title='CTO' img='/img/team/wilson-avatar.png' />
-        <TeamMember name='Brad Fanestil MD' title='Mind/Body Specialist' img='/img/team/whit-avatar.jpg' />
+        <TeamMember name='Brad Fanestil MD' title='Mind/Body Specialist' img='/img/team/brad-avatar.jpg' />
 
       </TeamContainer>
     </>
