@@ -45,14 +45,14 @@ const About = () => {
           <h5>Here are some quick youtube videos</h5>
           <li>
             <p>
-              <a href='https://youtu.be/6NehuwDA45Q'>
+              <a href='https://youtu.be/KoqaUANGvpA'>
                 Great explanation of learning brain vs survival brain
               </a>
             </p>
           </li>
           <li>
             <p>
-              <a href='https://youtu.be/KoqaUANGvpA'>
+              <a href='https://youtu.be/6NehuwDA45Q'>
                 Why train the adults instead of give them advice
               </a>
             </p>
