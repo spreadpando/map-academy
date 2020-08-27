@@ -6,7 +6,7 @@ import Services from '../src/Services'
 import About from '../src/About'
 import Facilitators from '../src/Facilitators'
 import Financials from '../src/Financials'
-import Team from '../src/Team'
+// import Team from '../src/Team'
 import Footer from '../src/Footer'
 
 const RootContainer = styled('div')`
@@ -55,7 +55,6 @@ const Home = ({ components }) => {
       <Facilitators />
       <ImgBanner bg='/img/IMG_20200817_102428.jpg' slides={slides[3]} />
       <Financials />
-      <Team />
       <Footer />
     </RootContainer>
   )

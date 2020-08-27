@@ -32,7 +32,13 @@ const FormGroup = styled('div')`
         margin: 1rem 0;
     }
 `
-
+const Response = styled('div')`
+    width: 100vw;
+    height:  70vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+`
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false)
   const [formData, setFormData] = useState({
@@ -82,7 +88,7 @@ const ContactForm = () => {
 
   return (
     <>
-      {submitted ? <div>Thanks for reaching out!</div>
+      {submitted ? <Response>Thanks for reaching out!</Response>
         : <Form>
           <FormGroup>
             <label htmlFor='name'>Your Name</label>
@@ -111,7 +117,7 @@ const ContactForm = () => {
             <br />
             <input type='submit' id='submit' value='Contact' onClick={(e) => { submitForm(e, '/api/sendcontact', formData) }} />
           </FormGroup>
-        </Form>}
+          </Form>}
     </>
   )
 }

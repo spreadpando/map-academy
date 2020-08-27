@@ -91,7 +91,9 @@ const NavBar = ({ scrollOne, scrollTwo, scrollThree, scrollFour }) => {
                 </ScrollLink>
               </ScrollTo>
               </>// eslint-disable-line
-            : ''
+            : <Link href='/'>
+              <PageLink>Home</PageLink>
+            </Link>
         }
 
         <Link href='/contact'>

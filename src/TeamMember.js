@@ -4,6 +4,7 @@ const TeamMemberContainer = styled('div')`
     width: 15rem;
     height: 20rem;
     text-align: center;
+    display: inline-block;
 `
 
 const TeamMemberAvatar = styled('img')`
