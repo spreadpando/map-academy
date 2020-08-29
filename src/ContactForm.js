@@ -88,7 +88,7 @@ const ContactForm = () => {
 
   return (
     <>
-      {submitted ? <Response>Thanks for reaching out!</Response>
+      {/* {submitted ? <Response>Thanks for reaching out!</Response>
         : <Form>
           <FormGroup>
             <label htmlFor='name'>Your Name</label>
@@ -117,7 +117,10 @@ const ContactForm = () => {
             <br />
             <input type='submit' id='submit' value='Contact' onClick={(e) => { submitForm(e, '/api/sendcontact', formData) }} />
           </FormGroup>
-          </Form>}
+          </Form>} */}
+      <p>
+            All inquiries to: mimi@map.academy
+      </p>
     </>
   )
 }
