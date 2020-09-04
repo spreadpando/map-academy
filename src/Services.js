@@ -13,9 +13,6 @@ const CenteredIcon = styled('img')`
 
 const Third = styled('div')`
     width: 100%;
-    // display: inline-flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
     padding: 15px;
     @media(min-width: 1000px){
       width: 33%;

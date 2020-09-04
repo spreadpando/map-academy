@@ -18,7 +18,10 @@ const Rscs = styled('ul')`
   padding: 0;
   text-align: right;
   list-style: none;
-  width: 50%;
+  width: 100%;
+  @media(min-width: 2000px){
+    width: 50%;
+}
 `
 
 const Subheading = styled('h5')`
