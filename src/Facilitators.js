@@ -1,13 +1,20 @@
 import styled from 'styled-components'
 import FscCard from './FscCard'
 
+const FscContainer = styled.div`
+  padding: 3rem;
+  @media(min-width: 1200px) {
+    padding: 3rem 25rem;
+  }
+`
+
 const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `
 const Subheading = styled('p')`
-  @media(min-width: 700px){
+  @media(min-width: 1500px){
     width: 50%;
   }
 `
@@ -18,7 +25,7 @@ const AlanaBio = "Alana is passionate about helping young people lead healthier,
 
 const Facilitators = () => {
   return (
-    <>
+    <FscContainer>
       <div id='facilitators'>
         <h2>Facilitators</h2>
         <Subheading>
@@ -30,7 +37,7 @@ const Facilitators = () => {
         <FscCard name='Alana R.' img='/img/fsc/alana.jpg' bio={AlanaBio} />
 
       </CardContainer>
-    </>
+    </FscContainer>
   )
 }
 export default Facilitators

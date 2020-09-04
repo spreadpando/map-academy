@@ -26,6 +26,10 @@ const ServicesContainer = styled('div')`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 3rem;
+    @media(min-width: 1200px) {
+      padding: 3rem 10rem;
+    }
 `
 
 const Services = () => {

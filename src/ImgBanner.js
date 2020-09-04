@@ -12,8 +12,6 @@ text-shadow: 2px 2px 10px #aaa;
 const InnerCarousel = styled('div')`
   width: 100vw;
   padding: 1rem;
-  margin: 3rem 0;
-  margin-left: -3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,11 +22,6 @@ const InnerCarousel = styled('div')`
   background-image: url(${props => props.bg});
   background-size: cover;
   background-position: center;
-  @media(min-width: 1500px){
-    padding: 0 3rem;
-    margin-left: -15rem;
-
-  }
 `
 const Carousel = ({ slides, bg }) => {
   const [index, setIndex] = useState(0)

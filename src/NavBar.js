@@ -7,7 +7,6 @@ import styled from 'styled-components'
 
 const BrandTitle = styled('h1')`
   line-height: 1;
-  background-color: ${({ theme }) => theme.colors.paper};
   padding: 15px;
   span {
     font-size: 1.3rem;
@@ -48,7 +47,8 @@ const PageLink = styled('a')`
 
 const Header = styled('header')`
   max-width: 100%;
-  padding: 5%;
+  padding:  15px 5%;
+  background-color: ${({ theme }) => theme.colors.paper};
 `
 
 const NavBar = () => {
