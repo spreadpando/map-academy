@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const TeamMemberContainer = styled('div')`
     width: 15rem;
-    height: 20rem;
+    height: 15rem;
     text-align: center;
     display: inline-block;
 `
@@ -21,9 +21,9 @@ const TeamMember = ({ name, title, img }) => {
   return (
     <TeamMemberContainer>
       <TeamMemberAvatar src={img} />
-      <p>{name}<br />
+      <h5>{name}<br />
         {title}
-      </p>
+      </h5>
     </TeamMemberContainer>
   )
 }

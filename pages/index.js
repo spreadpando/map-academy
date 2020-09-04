@@ -1,16 +1,16 @@
 // import { useRef } from 'react'
 import styled from 'styled-components'
-import NavBar from '../src/NavBar'
 import ImgBanner from '../src/ImgBanner'
 import Services from '../src/Services'
 import About from '../src/About'
 import Facilitators from '../src/Facilitators'
 import Financials from '../src/Financials'
 // import Team from '../src/Team'
-import Footer from '../src/Footer'
 
 const RootContainer = styled('div')`
+  position: relative;
   width: 100%;
+  height: 100%;
   padding: 0 3rem;
   @media(min-width: 1500px){
     padding: 0 15rem;
@@ -48,8 +48,6 @@ const Home = ({ components }) => {
 
   return (
     <RootContainer>
-      {/* <NavBar scrollOne={svcRef} scrollTwo={aboutRef} scrollThree={fscRef} /> */}
-      <NavBar />
       <ImgBanner bg='/img/IMG_20200817_102142_Bokeh.jpg' slides={slides[0]} />
       <Services />
       <ImgBanner bg='/img/IMG_20200817_103734.jpg' slides={slides[1]} />
@@ -58,7 +56,6 @@ const Home = ({ components }) => {
       <Facilitators />
       <ImgBanner bg='/img/IMG_20200817_102428.jpg' slides={slides[3]} />
       <Financials />
-      <Footer />
     </RootContainer>
   )
 }

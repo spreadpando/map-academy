@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Card = styled('div')`
   width: 30rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 25px #000;
+  box-shadow: 5px 5px 25px #aaa;
   margin: 2rem;
 `
 const CardLeft = styled('div')`
@@ -44,7 +44,7 @@ const Avatar = styled('img')`
   max-width: 15rem;
   margin: 1rem;
   border-radius: 50%;
-  box-shadow: 5px 5px 25px #000;
+  box-shadow: 5px 5px 25px #aaa;
 `
 
 const FscCard = ({ name, img, bio }) => {

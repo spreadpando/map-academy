@@ -29,6 +29,8 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.text_primary};
     cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.2em;
   }
   p {
     line-height: 1.5rem;
@@ -42,6 +44,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: rgba(0,0,0,0);
     border-radius: 3px;
     border: 1px solid #888;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: ${({ theme }) => theme.colors.text_primary};
   }
   ul{
     list-style-type: circle;

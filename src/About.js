@@ -2,29 +2,36 @@ import styled from 'styled-components'
 import TeamMember from './TeamMember'
 
 const AboutContainer = styled('div')`
-  width: 100%;
+  width: 100vw;
+  padding: 1rem 3rem;
+  background-color: ${({ theme }) => theme.colors.paper};
+  margin: 0 0 0 -3rem;
+  @media(min-width: 1500px){
+    margin: 0 0 0 -15rem;
+    padding: 1rem 15rem
+  }
+
 `
 
 const Rscs = styled('ul')`
-  margin: 0;
+  margin: 3rem;
   padding: 0;
   text-align: right;
   list-style: none;
+  width: 50%;
+  float: right;
 `
 
 const Subheading = styled('h5')`
   display: block;
   width: 100%;
-  // @media(min-width: 700px){
-  //   width: 50%;
-  // }
 `
 
 const InlineP = styled('p')`
   display: inline-block;
   width: 90%;
-  margin: 0 15px;
-  @media(min-width: 700px){
+  margin: 0 15px 2rem 15px;
+  @media(min-width: 1000px){
       width: 70%;
     }
 `
@@ -53,6 +60,7 @@ const About = () => {
               </a>
             </p>
           </li>
+          <hr />
           <li>
             <p>
               <a href='https://youtu.be/6NehuwDA45Q'>
@@ -60,6 +68,7 @@ const About = () => {
               </a>
             </p>
           </li>
+          <hr />
           <li>
             <p>
               <a href='https://youtu.be/UYvxlkCGmbQ'>

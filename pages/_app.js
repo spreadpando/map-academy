@@ -3,6 +3,8 @@ import App from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import theme from '../themes/themeAlpha'
 import GlobalStyle from '../themes/globalStyle'
+import NavBar from '../src/NavBar'
+import Footer from '../src/Footer'
 
 export default class MyApp extends App {
   render () {
@@ -16,7 +18,9 @@ export default class MyApp extends App {
         </Head>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
+          <NavBar />
           <Component {...pageProps} />
+          <Footer />
         </ThemeProvider>
       </>
     )

@@ -1,8 +1,9 @@
 export default {
   colors: {
-    primary: '#758582',
-    secondary: '#D573BA',
-    paper: '#eceff1',
+    primary: 'rgb(217, 233, 130, 0.7)',
+    secondary: '#ffd6f2',
+    paper: 'rgba(138,160,138,0.2)',
+    paper_variant: 'rgba(138,160,138,1)',
     text_primary: '#000',
     text_secondary: '#fff',
     surface_1: '#a59a96',
