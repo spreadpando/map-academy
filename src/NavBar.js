@@ -23,6 +23,7 @@ const ScrollTo = styled(motion.span)`
 const Nav = styled('nav')`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 `
 
 const PageLink = styled('a')`

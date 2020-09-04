@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 const HeroText = styled(motion.h1)`
 margin: 0;
 text-shadow: 2px 2px 10px #aaa;
-
   @media(min-width: 1000px){
     max-width: 50%;
   }
@@ -25,8 +24,10 @@ const InnerCarousel = styled('div')`
   background-image: url(${props => props.bg});
   background-size: cover;
   background-position: center;
-  @media(min-width: 1000px){
-    padding:L 3rem;
+  @media(min-width: 1500px){
+    padding: 0 3rem;
+    margin-left: -15rem;
+
   }
 `
 const Carousel = ({ slides, bg }) => {

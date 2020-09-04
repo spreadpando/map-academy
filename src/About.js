@@ -22,8 +22,11 @@ const Subheading = styled('h5')`
 
 const InlineP = styled('p')`
   display: inline-block;
-  width: 70%;
+  width: 90%;
   margin: 0 15px;
+  @media(min-width: 700px){
+      width: 70%;
+    }
 `
 
 const About = () => {

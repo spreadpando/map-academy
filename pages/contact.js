@@ -1,4 +1,3 @@
-// import { useRef } from 'react'
 import styled from 'styled-components'
 import NavBar from '../src/NavBar'
 import ContactForm from '../src/ContactForm'
@@ -10,10 +9,6 @@ const RootContainer = styled('div')`
 `
 
 const Home = ({ components }) => {
-  // const svcRef = useRef(null)
-  // const aboutRef = useRef(null)
-  // const fscRef = useRef(null)
-
   return (
     <RootContainer>
       <NavBar />

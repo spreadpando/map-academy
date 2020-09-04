@@ -12,6 +12,9 @@ import Footer from '../src/Footer'
 const RootContainer = styled('div')`
   width: 100%;
   padding: 0 3rem;
+  @media(min-width: 1500px){
+    padding: 0 15rem;
+  }
 `
 
 const slides = [

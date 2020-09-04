@@ -38,13 +38,10 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 5px;
     vertical-align: middle;
   }
-  input[type='submit'] {
-    border: 1px solid ${({ theme }) => theme.colors.text_primary};
-    padding: 10px 20px !important;
-    font-size: 14px !important;
-    background-color: ${({ theme }) => theme.colors.paper};
-    color: ${({ theme }) => theme.colors.text_primary};
-  
+  button, input[type="submit" i] {
+    background-color: rgba(0,0,0,0);
+    border-radius: 3px;
+    border: 1px solid #888;
   }
   ul{
     list-style-type: circle;
