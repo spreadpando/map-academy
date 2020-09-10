@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 const HeroText = styled(motion.h1)`
-margin: 0;
-text-shadow: 2px 2px 10px #aaa;
+  margin: 0 0 0 5rem;
   @media(min-width: 1000px){
     max-width: 50%;
   }
