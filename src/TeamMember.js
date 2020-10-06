@@ -7,20 +7,24 @@ const TeamMemberContainer = styled('div')`
     display: inline-block;
 `
 
-const TeamMemberAvatar = styled('img')`
+const TeamMemberAvatar = styled('div')`
     width: 10rem;
     height: 10rem;
+    margin: 0 auto;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
     box-shadow: 5px 5px 25px #000;
-
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
 `
 
 const TeamMember = ({ name, title, img }) => {
   return (
     <TeamMemberContainer>
-      <TeamMemberAvatar src={img} />
+      <TeamMemberAvatar>
+        <img src={img} />
+      </TeamMemberAvatar>
       <h5>{name}<br />
         {title}
       </h5>

@@ -6,6 +6,7 @@ const TeamContainer = styled('div')`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem 0;
 `
 
 const TeamHeader = styled('h1')`
@@ -19,10 +20,13 @@ const Team = () => {
       <TeamHeader>Team</TeamHeader>
       <TeamContainer>
         <TeamMember name='Mimi Ward MA, CALP' title='Founder & CEO' img='/img/team/mimi-avatar.jpg' />
-        <TeamMember name='Whitaker Fanestil' title='COO' img='/img/team/whit-avatar.jpg' />
-        <TeamMember name='Wilson Fanestil' title='CTO' img='/img/team/wilson-avatar.png' />
         <TeamMember name='Brad Fanestil MD' title='Mind/Body Specialist' img='/img/team/brad-avatar.jpg' />
-
+        <TeamMember name='Cathy Clark MA' title='Executive Coach Boulder Ed. Strategies' img='/img/team/cathy-avatar.jpg' />
+        <TeamMember
+          name='Eleni Arapkiles' title='
+          Literature and writing specialist
+          32 yr Bvsd English teacher' img='/img/team/leni-avatar.jpg'
+        />
       </TeamContainer>
     </>
 
