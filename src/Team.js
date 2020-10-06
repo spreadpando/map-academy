@@ -17,7 +17,7 @@ const TeamHeader = styled('h1')`
 const Team = () => {
   return (
     <>
-      <TeamHeader>Team</TeamHeader>
+      <TeamHeader id='team'>Team</TeamHeader>
       <TeamContainer>
         <TeamMember name='Mimi Ward MA, CALP' title='Founder & CEO' img='/img/team/mimi-avatar.jpg' />
         <TeamMember name='Brad Fanestil MD' title='Mind/Body Specialist' img='/img/team/brad-avatar.jpg' />

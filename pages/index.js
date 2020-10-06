@@ -1,4 +1,4 @@
-// import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import styled from 'styled-components'
 import ImgBanner from '../src/ImgBanner'
 import Services from '../src/Services'
@@ -6,6 +6,7 @@ import About from '../src/About'
 import Facilitators from '../src/Facilitators'
 import Financials from '../src/Financials'
 import Team from '../src/Team'
+import ScrollTop from '../src/ScrollTop'
 
 const RootContainer = styled('div')`
   position: relative;
@@ -38,12 +39,26 @@ const slides = [
 ]
 
 const Home = ({ components }) => {
-  // const svcRef = useRef(null)
+  const pageRef = useRef(null)
   // const aboutRef = useRef(null)
   // const fscRef = useRef(null)
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const checkScroll = () => {
+      if (window.pageYOffset > 350) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+    window.addEventListener('scroll', checkScroll)
+    return () => {
+      window.removeEventListener('scroll', checkScroll)
+    }
+  })
 
   return (
-    <RootContainer>
+    <RootContainer ref={pageRef}>
       <ImgBanner bg='/img/IMG_20200817_102142_Bokeh.jpg' slides={slides[0]} />
       <Services />
       <ImgBanner bg='/img/IMG_20200817_103734.jpg' slides={slides[1]} />
@@ -53,6 +68,9 @@ const Home = ({ components }) => {
       <Team />
       <ImgBanner bg='/img/IMG_20200817_102428.jpg' slides={slides[3]} />
       <Financials />
+      {scrolled
+        ? (<ScrollTop />)
+        : null}
     </RootContainer>
   )
 }

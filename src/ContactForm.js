@@ -30,25 +30,27 @@ const ContactForm = () => {
       {
         submitted
           ? <p>Thanks for reaching out!</p>
-          : <Form
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            onSubmit={handleSubmit(onSubmit)}
-          > {/* eslint-disable-line */}
-            <label>
+          : (
+            <Form
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <label>
               name
-            </label>
-            <input type='text' id='name' name='name' ref={register({ required: true })} />
-            <label>
+              </label>
+              <input type='text' id='name' name='name' ref={register({ required: true })} />
+              <label>
               email
-            </label>
-            <input type='email' id='email' name='email' ref={register({ required: true })} />
-            <label>
+              </label>
+              <input type='email' id='email' name='email' ref={register({ required: true })} />
+              <label>
               comment
-            </label>
-            <textarea rows='4' cols='24' id='comment' name='comment' ref={register()} />
-            <input type='submit' value='send' />
-          </Form>//eslint-disable-line
+              </label>
+              <textarea rows='4' cols='24' id='comment' name='comment' ref={register()} />
+              <input type='submit' value='send' />
+            </Form>
+          )
       }
     </>
   )

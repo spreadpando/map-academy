@@ -102,6 +102,16 @@ const NavBar = () => {
               <ScrollTo>
                 <ScrollLink
                   style={{ color: 'inherit' }}
+                  offset={-50}
+                  duration={750} to='team'
+                >
+        Team
+                </ScrollLink>
+              </ScrollTo>
+
+              <ScrollTo>
+                <ScrollLink
+                  style={{ color: 'inherit' }}
                   offset={-550}
                   duration={750} to='financials'
                 >
